@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(30, 38%, 92%);
+
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.item-card{
+    background-color: white;
+    margin-inline: auto;
+    width: 600px;
+    height: 450px;
+    display: flex;
+    border-radius: 10px;
+}
+
+.item-img {
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(/images/image-product-desktop.jpg);
+    background-size: cover;
+
+    flex: 0 0 300px;
+    border-radius: 10px 0 0 10px;
+
+}
+
+.item-info {
+    padding: 31px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    max-height: 100%;
+    overflow: auto;
+}
+
+.item-type {
+    font-family: "Montserrat", serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 12px;
+    color: #222;
+    margin:  0 0  24px 0;
+}
+
+.item-name {
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1;
+    color: hsl(212, 21%, 14%);
+    margin:  0 0  24px 0;
+
+    /* margin: 25px; */
+}
+
+.item-desc {
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    line-height: 1.7;
+}
+
+/* .item-price {
+    
+} */
+
+.new-price {
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    font-size: 32px;
+    margin-right: 12px;
+    vertical-align: middle;
+    color: hsl(158, 36%, 37%);
+}
+
+.old-price {
+    font-family: "Montserrat", serif;
+    text-decoration: line-through;
+    vertical-align: middle;
+    color: rgb(100, 100, 100);
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.add-to-cart-btn {
+    font-family: "Montserrat", serif;
+    margin: 26px auto 0;
+    font-size: 14px;
+    font-weight: 600;
+    display: block;
+    background-color: hsl(158, 36%, 37%);
+    color:white;
+    height: 48px;
+    width: 234px;
+    border-radius: 10px;
+    border: none;
+
+}
+
+.add-to-cart-btn svg {
+    vertical-align: sub;
+    margin-right: 7px;
+}
+
+/* Dark cyan: hsl(158, 36%, 37%)
+Cream: hsl(30, 38%, 92%)
+Neutral
+Very dark blue: hsl(212, 21%, 14%)
+Dark grayish blue: hsl(228, 12%, 48%)
+White: hsl(0, 0%, 100%) */
